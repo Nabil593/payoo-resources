@@ -21,8 +21,18 @@ document.getElementById('add-money-btn').addEventListener('click', function() {
 
     // Pin verify
     if (pin === '0987') {
-        alert(`Add Money Success from ${bankAccount}`);
+        alert(`Add Money Success from ${bankAccount} at ${new Date()}`);
         setBalance(newBalance);
+
+        const history = document.getElementById('history');
+        const newHistory = document.createElement('div');
+        newHistory.innerHTML = `
+        <div class="transaction-card p-5 bg-base-100">
+          Add Money Success from ${bankAccount} at ${new Date()} & account Number ${account}
+        </div>
+        `;
+        history.append(newHistory);
+
     } else {
         alert('Invalid Pin Number');
         return;
