@@ -1,6 +1,23 @@
+// Machine id> input value.
 function getValueFromInput(id) {
     const input = document.getElementById(id);
     const value = input.value;
-    console.log(id, value);
+    // console.log(id, value);
     return value;
+};
+
+
+
+// Machine > balance. 
+function getBalance() {
+    const currentBalance = document.getElementById("balance");
+    const balance = currentBalance.innerText;
+    return Number(balance);
+}
+
+
+// Machine value Set Balance.
+function setBalance(value) {
+    const currentBalance = document.getElementById("balance");
+    currentBalance.innerText = value;
 }
