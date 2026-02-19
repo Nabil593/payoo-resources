@@ -29,6 +29,8 @@ document.getElementById('cashout-btn').addEventListener('click', function() {
 
 
 
+
+// Another way:
 // document.getElementById('cashout-btn').addEventListener("click", function() {
 //     const cashoutInput = document.getElementById("cashout-number").value;
 //     const cashoutAmountInput = document.getElementById('cashout-amount').value;
